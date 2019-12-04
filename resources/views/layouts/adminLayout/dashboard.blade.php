@@ -6,7 +6,7 @@
     <!--End-breadcrumbs-->
 
     <!--Action boxes-->
-    <div class="container-fluid"
+    <!--<div class="container-fluid"
     {{--<div class="quick-actions_homepage">--}}
     {{--<ul class="quick-actions">--}}
     {{--<li class="bg_lb"> <a href="index.html"> <i class="icon-dashboard"></i> <span class="label label-important">20</span> My Dashboard </a> </li>--}}
@@ -22,12 +22,13 @@
 
     {{--</ul>--}}
     {{--</div>--}}
+-->
     <!--End-Action boxes-->
 
     <!-- in the admin folder, dashboard file-->
 
     <!--Chart-box-->
-    <div class="row-fluid">
+    <!--<div class="row-fluid">
         <div class="widget-box">
             <div class="widget-title bg_lg"><span class="icon"><i class="icon-signal"></i></span>
                 <h5>Site Analytics</h5>
@@ -45,15 +46,15 @@
                             <li class="bg_lh"><i class="icon-tag"></i> <strong>9540</strong> <small>Total Orders</small></li>
                             <li class="bg_lh"><i class="icon-repeat"></i> <strong>10</strong> <small>Pending Orders</small></li>
                             <li class="bg_lh"><i class="icon-globe"></i> <strong>8540</strong> <small>Online Orders</small></li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div -->
 
 
-    <hr/>
+    <!--<hr/>
     <div class="row-fluid">
         <div class="span6">
             <div class="widget-box">
@@ -115,8 +116,9 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="widget-box">
+            </div -->
+
+            <!--<div class="widget-box">
                 <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
                     <h5>Progress Box</h5>
                 </div>
@@ -144,8 +146,9 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="widget-box">
+            </div -->
+
+            <!--<div class="widget-box">
                 <div class="widget-title bg_lo"  data-toggle="collapse" href="#collapseG3" > <span class="icon"> <i class="icon-chevron-down"></i> </span>
                     <h5>News updates</h5>
                 </div>
@@ -161,8 +164,9 @@
                 </div>
             </div>
 
-        </div>
-        <div class="span6">
+        </div -->
+
+        <!--<div class="span6">
             <div class="widget-box widget-chat">
                 <div class="widget-title bg_lb"> <span class="icon"> <i class="icon-comment"></i> </span>
                     <h5>Chat Option</h5>
@@ -181,8 +185,9 @@
                                 <li id="user-Maxi" class="online"><a href=""><img alt="" src="img/demo/av5.jpg" /> <span>Maxi</span></a></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="chat-content panel-left2">
+                    </div -->
+
+                    <!--<div class="chat-content panel-left2">
                         <div class="chat-messages" id="chat-messages">
                             <div id="chat-messages-inner"></div>
                         </div>
@@ -219,8 +224,9 @@
                             </div>
                     </ul>
                 </div>
-            </div>
-            <div class="accordion" id="collapse-group">
+            </div -->
+
+           <!-- <div class="accordion" id="collapse-group">
                 <div class="accordion-group widget-box">
                     <div class="accordion-heading">
                         <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGOne" data-toggle="collapse"> <span class="icon"><i class="icon-magnet"></i></span>
@@ -294,6 +300,6 @@
             </div>
         </div>
     </div>
-    </div>
+    </div -->
 
     @endsection

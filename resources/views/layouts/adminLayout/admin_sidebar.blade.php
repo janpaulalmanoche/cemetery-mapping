@@ -9,7 +9,7 @@
         <li><a href="{{url(route('record.index'))}}"><i class="icon icon-user"></i> <span>Records</span></a></li>
         <li><a href="{{url(url('/plot'))}}"><i class="icon icon-user-md"></i> <span>Plot Area</span></a></li>
 
-        {{--<li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>--}}
+        <!--{{--<li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>--}}
             {{--<ul>--}}
                 {{--<li><a href="form-common.html">Basic Form</a></li>--}}
                 {{--<li><a href="form-validation.html">Form with Validation</a></li>--}}
@@ -49,6 +49,6 @@
             {{--<span class="percent">87%</span>--}}
             {{--<div class="stat">604.44 / 4000 MB</div>--}}
         {{--</li>--}}
-    </ul>
+    </ul -->
 </div>
 <!--sidebar-menu-->

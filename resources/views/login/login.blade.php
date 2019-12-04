@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Matrix Admin</title><meta charset="UTF-8" />
+    <title>Monte Cielo</title><meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{ asset ('css/backend_css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset ('css/backend_css/bootstrap-responsive.min.css') }}" />
@@ -82,7 +82,7 @@
 
         <div class="form-actions">
             <span class="pull-left"><a href="#" class="flip-link btn btn-success" id="to-login">&laquo; Back to login</a></span>
-            <span class="pull-right"><a class="btn btn-info">Reecover</a></span>
+            <span class="pull-right"><a class="btn btn-info">Recover</a></span>
         </div>
     </form>
 </div>

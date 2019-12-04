@@ -28,6 +28,8 @@ class RecordController extends Controller
     }
 
     public function store(Request $request){
+
+
         //        dd($request->all());
         if($request->birthday > Carbon::now()){
             return redirect()->back()->with('error','You cant put a date that is ahead of the present date');

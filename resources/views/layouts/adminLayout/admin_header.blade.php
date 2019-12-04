@@ -14,10 +14,10 @@
                 <i class="icon icon-user"
                 ></i>  <span class="text">Welcome {{auth()->user()->email}}</span><b class="caret"></b></a>
             <ul class="dropdown-menu">
-                <li><a href="#"><i class="icon-user"></i> My Profile</a></li>
+                <!--li><a href="#"><i class="icon-user"></i> My Profile</a></li>
                 <li class="divider"></li>
                 <li><a href="#"><i class="icon-check"></i> My Tasks</a></li>
-                <li class="divider"></li>
+                <li class="divider"></li -->
 
                 <li>
                     <form action="{{ route('logout') }}" method="POST">
@@ -29,7 +29,7 @@
                 </li>
             </ul>
         </li>
-        <li class="dropdown" id="menu-messages"><a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle"><i class="icon icon-envelope"></i> <span class="text">Messages</span> <span class="label label-important">5</span> <b class="caret"></b></a>
+        <!--<li class="dropdown" id="menu-messages"><a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle"><i class="icon icon-envelope"></i> <span class="text">Messages</span> <span class="label label-important">5</span> <b class="caret"></b></a>
             <ul class="dropdown-menu">
                 <li><a class="sAdd" title="" href="#"><i class="icon-plus"></i> new message</a></li>
                 <li class="divider"></li>
@@ -38,11 +38,11 @@
                 <li><a class="sOutbox" title="" href="#"><i class="icon-arrow-up"></i> outbox</a></li>
                 <li class="divider"></li>
                 <li><a class="sTrash" title="" href="#"><i class="icon-trash"></i> trash</a></li>
-            </ul>
+            </ul -->
         </li>
-        <li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">Settings</span></a></li>
-        <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
-    </ul>
+        <li class=""><a title="" href="#"><strong>Cemetery Mapping Information System</strong></li>
+        <!--<li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
+    </ul -->
 </div>
 <!--close-top-Header-menu-->
 <!--start-top-serch-->
