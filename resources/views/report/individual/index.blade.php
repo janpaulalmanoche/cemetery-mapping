@@ -21,11 +21,6 @@
 <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
 <h5>
 Record's list table
-|
-<a href="{{route('record.create')}}">
-Add Record
-<i class="icon icon-plus"> </i>
-</a>
 </h5>
 </div>
 <div class="widget-content nopadding">
