@@ -4,18 +4,18 @@
             @if(\Illuminate\Support\Facades\Auth::user()->role_id == 1)
         <li> <a href="{{route('user.index')}}"><i class="icon icon-user-md"></i> <span>Add User</span></a> </li>
             @endif
-        <li> <a href="widgets.html"><i class="icon  icon-book"></i> <span>Report</span></a> </li>
+
         {{--<li><a href="tables.html"><i class="icon icon-th"></i> <span>Tables</span></a></li>--}}
         <li><a href="{{url(route('record.index'))}}"><i class="icon icon-user"></i> <span>Records</span></a></li>
         <li><a href="{{url(url('/plot'))}}"><i class="icon icon-user-md"></i> <span>Plot Area</span></a></li>
 
-        {{--<li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>--}}
-            {{--<ul>--}}
-                {{--<li><a href="form-common.html">Basic Form</a></li>--}}
-                {{--<li><a href="form-validation.html">Form with Validation</a></li>--}}
-                {{--<li><a href="form-wizard.html">Form with Wizard</a></li>--}}
-            {{--</ul>--}}
-        {{--</li>--}}
+        <li class="submenu"> <a href="#"><i class="icon icon-book"></i> <span>Reports</span></a>
+            <ul>
+                <li><a href="{{url('/report-individual')}}">Individual Report</a></li>
+                <li><a href="form-validation.html">Form with Validation</a></li>
+                <li><a href="form-wizard.html">Form with Wizard</a></li>
+            </ul>
+        </li>
         {{--<li><a href="buttons.html"><i class="icon icon-tint"></i> <span>Buttons &amp; icons</span></a></li>--}}
         {{--<li><a href="interface.html"><i class="icon icon-pencil"></i> <span>Eelements</span></a></li>--}}
         {{--<li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>Addons</span> <span class="label label-important">5</span></a>--}}

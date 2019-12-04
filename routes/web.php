@@ -44,3 +44,8 @@ Auth::routes();
 //
 //    return view('register.index');
 //});
+
+//report for a single record
+Route::get('/report-individual','ReportController@individualI_index');
+Route::get('/report-individual-result/{id}','ReportController@individual');
+
