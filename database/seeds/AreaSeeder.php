@@ -21,9 +21,6 @@ class AreaSeeder extends Seeder
             ['area' => 'F'],
             ['area' => 'G'],
             ['area' => 'H'],
-            ['area' => 'I'],
-            ['area' => 'J'],
-            ['area' => 'K'],
 
         ];
         foreach($area as $areas){
