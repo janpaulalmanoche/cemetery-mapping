@@ -37,29 +37,29 @@ class PlotSeeder extends Seeder
             ['area_id' => '8' ,'status' => 'vacant'],
         ];
 
-        for($x = 0; $x <= 30; $x++){
+        for($x = 0; $x <= 49; $x++){
             \App\Plot::insert($plot);
         }
-        for($x = 0; $x <= 50; $x++){
+        for($x = 0; $x <= 79; $x++){
             \App\Plot::insert($plot2);
         }
-        for($x = 0; $x <= 50; $x++){
+        for($x = 0; $x <= 79; $x++){
             \App\Plot::insert($plot3);
         }
-        for($x = 0; $x <= 30; $x++){
+        for($x = 0; $x <= 79; $x++){
             \App\Plot::insert($plot4);
         }
 
-        for($x = 0; $x <= 30; $x++){
+        for($x = 0; $x <= 49; $x++){
             \App\Plot::insert($plot5);
         }
-        for($x = 0; $x <= 50; $x++){
+        for($x = 0; $x <= 79; $x++){
             \App\Plot::insert($plot6);
         }
-        for($x = 0; $x <= 50; $x++){
+        for($x = 0; $x <= 79; $x++){
             \App\Plot::insert($plot7);
         }
-        for($x = 0; $x <= 30; $x++){
+        for($x = 0; $x <= 49; $x++){
             \App\Plot::insert($plot8);
         }
 

@@ -14,14 +14,14 @@ class CreateRecordsTable extends Migration
     public function up()
     {
         Schema::create('records', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('first_name');
-            $table->string('middle_name');
-            $table->string('last_name');
-            $table->dateTime('birth_date');
-            $table->dateTime('deceased_date');
-            $table->integer('plot_id');
-            $table->string('color');
+            $table->bigIncrements('id')->nullable();
+            $table->string('first_name')->nullable();
+            $table->string('middle_name')->nullable();
+            $table->string('last_name')->nullable();
+            $table->dateTime('birth_date')->nullable();
+            $table->dateTime('deceased_date')->nullable();
+            $table->integer('plot_id')->nullable();
+            $table->string('color')->nullable();
             $table->timestamps();
         });
     }

@@ -26,6 +26,8 @@ Route::group(['middleware' => ['auth']], function () {
 
     //add deceased record
     Route::resource('/record','RecordController');
+    Route::post('/update-re','RecordController@haha');
+
     //add deceased record through the plot index
     Route::get('/add-record/{id}','RecordController@add_though_plot_index');
     Route::resource('/plot','PlotController');
@@ -48,4 +50,7 @@ Auth::routes();
 //report for a single record
 Route::get('/report-individual','ReportController@individualI_index');
 Route::get('/report-individual-result/{id}','ReportController@individual');
+
+Route::get('visitor-individual','ReportController@visitor_index');
+Route::get('visitor-individual/{record_id}','ReportController@visitor_result');
 

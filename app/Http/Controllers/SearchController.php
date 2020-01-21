@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Area;
 use App\Plot;
 use App\Record;
+use App\PlotVisitor;
 use Illuminate\Http\Request;
 
 class SearchController extends Controller
@@ -48,6 +49,17 @@ class SearchController extends Controller
         });
 
         return response()->json([ 'area' => $area_of_person ,'plot' => $plot , 'record' => $record]);
+
+    }
+
+    public function visitor(Request $request){
+
+        $new = new PlotVisitor;
+        $new->record_id = $request->id;
+        $new->visitor = $request->name;
+        $new->save();
+
+        return response()->json(['success' => true]);
 
     }
 

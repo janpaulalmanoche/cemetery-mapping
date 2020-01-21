@@ -12,8 +12,9 @@
         <li class="submenu"> <a href="#"><i class="icon icon-book"></i> <span>Reports</span></a>
             <ul>
                 <li><a href="{{url('/report-individual')}}">Individual Report</a></li>
-                <li><a href="form-validation.html">Form with Validation</a></li>
-                <li><a href="form-wizard.html">Form with Wizard</a></li>
+                <li><a href="{{url('/visitor-individual')}}">Visitor Report</a></li>
+                {{--<li><a href="{{url('visitor-individual'}}">Visitor Report</a></li>--}}
+                {{--<li><a href="form-wizard.html">Visit</a></li>--}}
             </ul>
         </li>
         {{--<li><a href="buttons.html"><i class="icon icon-tint"></i> <span>Buttons &amp; icons</span></a></li>--}}

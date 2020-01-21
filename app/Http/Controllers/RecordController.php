@@ -29,8 +29,19 @@ class RecordController extends Controller
 
     public function store(Request $request){
 
+        $check_if_taken = Record::where('plot_id',$request->plot_it)->count();
+        if($check_if_taken >= 1){
+            return redirect()->back()->with('error','Plot ID is already Occupied');
+        }
 
-        //        dd($request->all());
+        $check_if_person_already_registere = Record::where('first_name',$request->first_name)
+            ->where('middle_name',$request->middle_name)->where('last_name',$request->last_name)
+            ->count();
+        if($check_if_person_already_registere >= 1){
+            return redirect()->back()->with('error','Person already regisered');
+        }
+
+
         if($request->birthday > Carbon::now()){
             return redirect()->back()->with('error','You cant put a date that is ahead of the present date');
         }
@@ -44,10 +55,6 @@ class RecordController extends Controller
             return redirect()->back()->with('error','select Plot ');
         }
 
-        $check_if_taken = Plot::where('id',$request->plot_it)->count();
-        if($check_if_taken == 1){
-            return redirect()->back()->with('error','Plot ID is already Occupied');
-        }
 
 
         $this->validate($request,[
@@ -62,13 +69,48 @@ class RecordController extends Controller
 
     }
 
-    public function show(){
+    public function show($id){
+        $record = Record::find($id);
+
+//                dd('hello');
+        return view('deceased.edit')->with(compact('record'));
+    }
+
+    public function haha(Request $request){
+//        dd($request->all());
+        if($request->birthday > Carbon::now()){
+            return redirect()->back()->with('error','You cant put a date that is ahead of the present date');
+        }
+//        if($request->deceased > Carbon::now()){
+//            return redirect()->back()->with('error','You cant put a date that is ahead of the present date');
+//        }
+//        if($request->birthday > $request->deceased ){
+//            return redirect()->back()->with('error','Deceased Date should be greater than Birthdate');
+//        }
+
+
+                $new = Record::where('id',$request->record_id)->first();
+
+                    if(empty($request->birthday)){
+                        $request->birthday = $new->birth_date;
+                    }
+                    if(empty($request->deceased)){
+                        $request->deceased = $new->deceased_date;
+                    }
+
+                    $new->first_name = $request->first_name;
+                    $new->middle_name = $request->middle_name;
+                    $new->last_name = $request->last_name;
+                    $new->birth_date = $request->birthday;
+                    $new->deceased_date = $request->deceased;
+                    $new->update();
+
+                    return redirect(route('record.index'));
+
+
 
     }
 
-    public function update(){
-
-    }
 
 
 

@@ -56,8 +56,10 @@
 
                     <address>
 
-                        {{--<strong>Selected Date : <br/></strong>--}}
-                        {{--<strong>Type :</strong>--}}
+                        <strong>Record : {{$record->first_name}}  {{$record->last_name}}<br/></strong>
+                        <strong>Birthdate : {{date('F d Y',strtotime($record->birth_date))}}</strong> <br>
+                        <strong>Plot : {{$record->plots()->first()->id}}</strong> <br>
+                        <strong>Area : {{$record->plots()->first()->area()->first()->area}}</strong>
                     </address>
                     <address>
                 </div>
@@ -91,31 +93,21 @@
 
                             <thead>
                             <tr>
-                                <td class="text-center"><strong>First Name</strong></td>
-                                <td class="text-center"><strong>Middle Name</strong></td>
-                                <td class="text-center"><strong>Last Name</strong></td>
-                                <td class="text-center"><strong>BIRTH DATE</strong></td>
-                                <td class="text-center"><strong>DECEASED DATE</strong></td>
-                                <td class="text-center"><strong>PLOT ID</strong></td>
-                                <td class="text-center"><strong>SECTION</strong></td>
+                                <td class="text-center"><strong>Visitor</strong></td>
+                                <td class="text-center"><strong>Date</strong></td>
                             </tr>
                             </thead>
                             <tbody>
                             <!-- foreach ($order->lineItems as $line) or some such thing here -->
 
-                            <tr>
+                            @foreach($visitor as $vi)
+                                <tr>
 
+                                <td class="text-center">{{$vi->visitor}}</td>
+                                <td class="text-center">{{date('F d Y',strtotime($vi->created_at))}}</td>
 
-                                <td class="text-center">{{ucfirst($record->first_name)}}</td>
-                                <td class="text-center">{{ucfirst($record->middle_name)}}</td>
-                                <td class="text-center">{{ucfirst($record->last_name)}}</td>
-                                <td class="text-center">{{date('F d Y',strtotime($record->birth_date))}}</td>
-
-                                <td class="text-center">{{date('F d Y',strtotime($record->deceased_date))}}</td>
-                                <td class="text-center">{{$record->plot_id}}</td>
-                                <td class="text-center">{{$record->plots()->first()->area()->first()->area}}</td>
-
-                            </tr>
+                                </tr>
+                            @endforeach
 
 
                             <tr>

@@ -50,11 +50,11 @@
                                     <br/>
                                     Area : {{$record->plots()->first()->area()->first()->area}}
                                 </td>
-                                <td> {{date_format($record->created_at , 'F d Y')}}</td>
+                                <td> {{date( 'F d Y',strtotime($record->created_at))}}</td>
                                 <td style="font-size: 15px">
-                                    <a href="{{url('/report-individual-result',$record->id)}}" style="margin-left: 10px">
+                                    <a href="{{url('/visitor-individual',$record->id)}}" style="margin-left: 10px">
                                         <button class="btn btn-primary">
-                                            Report     <l class="icon icon-edit"></l>
+                                         Visitor   Report     <l class="icon icon-edit"></l>
                                         </button>
                                     </a>
 

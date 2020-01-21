@@ -48,8 +48,8 @@
                                 <td>{{$record->last_name}}</td>
                                 <td>{{$record->middle_name}}</td>
                                 <td>{{$record->first_name}}</td>
-                                <td> {{$record->birth_date}}</td>
-                                <td> {{$record->deceased_date}}</td>
+                                <td> {{date('F d Y',strtotime($record->birth_date))}}</td>
+                                <td> {{date('F d Y',strtotime($record->deceased_date))}}</td>
                                 <td>
                                     Plot ID: {{$record->plot_id}}
                                     <br/>
@@ -57,11 +57,11 @@
                                 </td>
                                 <td> {{date_format($record->created_at , 'F d Y')}}</td>
                                 <td style="font-size: 20px">
-                                    <a href="{{route('user.show',$record->id)}}" style="margin-left: 10px">
+                                    <a href="{{route('record.show',$record->id)}}" style="margin-left: 10px">
                                         <l class="icon icon-edit"></l>
                                     </a>
 
-                                    <a href="{{route('user.show',$record->id)}}" style="margin-left: 10px">
+                                    <a href="" style="margin-left: 10px">
                                         <l class="icon icon-remove-circle"></l>
                                     </a>
                                 </td>

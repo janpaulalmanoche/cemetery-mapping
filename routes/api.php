@@ -20,3 +20,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('/search','SearchController@index');
 
 Route::post('/display-plot','SearchController@display');
+
+Route::post('/plot-visitor','SearchController@visitor');
+
+Route::get('/test','TestController@index');
+Route::get('/testt','TestController@result');
