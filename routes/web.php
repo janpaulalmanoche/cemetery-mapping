@@ -23,6 +23,7 @@ Route::group(['middleware' => ['auth']], function () {
 
     //adding user
     Route::resource('/user','Registration');
+    Route::post('user/update','Registration@update');
 
     //add deceased record
     Route::resource('/record','RecordController');
@@ -54,3 +55,6 @@ Route::get('/report-individual-result/{id}','ReportController@individual');
 Route::get('visitor-individual','ReportController@visitor_index');
 Route::get('visitor-individual/{record_id}','ReportController@visitor_result');
 
+//per plot report
+Route::get('/per-area','ReportController@per_plot_report');
+Route::post('/area-report','ReportController@result');

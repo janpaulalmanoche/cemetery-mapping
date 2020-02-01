@@ -21,6 +21,7 @@ class CreateRecordsTable extends Migration
             $table->dateTime('birth_date')->nullable();
             $table->dateTime('deceased_date')->nullable();
             $table->integer('plot_id')->nullable();
+            $table->integer('area_id')->nullable();
             $table->string('color')->nullable();
             $table->timestamps();
         });

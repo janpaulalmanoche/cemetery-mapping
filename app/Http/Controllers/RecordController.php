@@ -28,7 +28,7 @@ class RecordController extends Controller
     }
 
     public function store(Request $request){
-
+//        dd($request->all());
         $check_if_taken = Record::where('plot_id',$request->plot_it)->count();
         if($check_if_taken >= 1){
             return redirect()->back()->with('error','Plot ID is already Occupied');
@@ -88,7 +88,7 @@ class RecordController extends Controller
 //            return redirect()->back()->with('error','Deceased Date should be greater than Birthdate');
 //        }
 
-
+                        $plot =
                 $new = Record::where('id',$request->record_id)->first();
 
                     if(empty($request->birthday)){

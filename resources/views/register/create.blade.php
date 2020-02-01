@@ -22,19 +22,19 @@
                             <div class="control-group">
 
 
-                                <div class="control-group">
-                                    <label class="control-label">Role :</label>
-                                    <div class="controls">
-                                        <select class="span11" name="role_id">
-                                            <option selected>Select Role</option>
-                                            @foreach($role as $roles)
-                                                <option value="{{$roles->id}}">
-                                                  {{$roles->role}}
-                                                </option>
-                                            @endforeach
-                                        </select>
-                                    </div>
-                                </div>
+                                {{--<div class="control-group">--}}
+                                    {{--<label class="control-label">Role :</label>--}}
+                                    {{--<div class="controls">--}}
+                                        {{--<select class="span11" name="role_id">--}}
+                                            {{--<option selected>Select Role</option>--}}
+                                            {{--@foreach($role as $roles)--}}
+                                                {{--<option value="{{$roles->id}}">--}}
+                                                  {{--{{$roles->role}}--}}
+                                                {{--</option>--}}
+                                            {{--@endforeach--}}
+                                        {{--</select>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
 
                                 <label class="control-label">First Name :</label>
                                 <div class="controls">

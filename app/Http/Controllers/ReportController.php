@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Record;
 use Illuminate\Http\Request;
 use App\PlotVisitor;
+use App\Area;
 class ReportController extends Controller
 {
     //
@@ -37,5 +38,20 @@ class ReportController extends Controller
 
         return view('report.visitor.result')->with(compact('record','visitor'));
     }
+
+    public function per_plot_report(){
+
+        $area = Area::get();
+        return view('report.by_area_report.index')->with(compact('area'));
+    }
+    public function result(Request $request){
+        $records = Record::where('area_id',$request->area_id)->get();
+        $count = Record::where('area_id',$request->area_id)->count();
+        $area = Area::find($request->area_id);
+//        dd($record);
+
+        return view('report.by_area_report.show')->with(compact('records','count','area'));
+    }
+
 
 }

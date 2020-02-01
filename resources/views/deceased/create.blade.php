@@ -122,6 +122,7 @@
                                                 Plot ID: {{$plots->id}} |
                                                 Area : {{$plots->area()->first()->area}}
                                             </option>
+
                                         @endforeach
                                     </select>
                                 </div>

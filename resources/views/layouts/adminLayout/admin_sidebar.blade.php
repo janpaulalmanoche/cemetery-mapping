@@ -13,6 +13,7 @@
             <ul>
                 <li><a href="{{url('/report-individual')}}">Individual Report</a></li>
                 <li><a href="{{url('/visitor-individual')}}">Visitor Report</a></li>
+                <li><a href="{{url('/per-area')}}">Area Report</a></li>
                 {{--<li><a href="{{url('visitor-individual'}}">Visitor Report</a></li>--}}
                 {{--<li><a href="form-wizard.html">Visit</a></li>--}}
             </ul>
